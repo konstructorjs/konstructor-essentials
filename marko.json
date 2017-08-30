@@ -1,0 +1,10 @@
+{
+  "<import-stylesheets>": {
+      "template": "./components/import-stylesheets.marko",
+      "@css": "*"
+  },
+  "<import-javascripts>": {
+      "template": "./components/import-javascripts.marko",
+      "@js": "*"
+  }
+}

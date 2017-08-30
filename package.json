@@ -2,10 +2,19 @@
   "name": "konstructor-essentials",
   "version": "0.0.0",
   "description": "essentials for konstructor",
-  "main": "index.js",
+  "main": "lib",
+  "files": [
+    "components",
+    "lib",
+    "essentials.scss",
+    "marko.json"
+  ],
   "scripts": {
+    "dev": "babel --out-dir lib/ --copy-files --watch src/",
+    "prepublish": "npm run compile",
+    "compile": "babel --out-dir lib/ --copy-files src/",
     "test": "npm run lint",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js src/."
   },
   "repository": {
     "type": "git",
@@ -23,8 +32,13 @@
   },
   "homepage": "https://github.com/konstructorjs/konstructor-essentials#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "marko": "^4.4.27"
   }
 }
