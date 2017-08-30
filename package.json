@@ -1,6 +1,6 @@
 {
   "name": "konstructor-essentials",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "essentials for konstructor",
   "main": "lib",
   "files": [
@@ -14,11 +14,12 @@
     "prepublish": "npm run compile",
     "compile": "babel --out-dir lib/ --copy-files src/",
     "test": "npm run lint",
-    "lint": "eslint *.js src/."
+    "lint": "eslint *.js src/.",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/konstructorjs/konstructor-essentials.git"
+    "url": "https://github.com/konstructorjs/konstructor-essentials.git"
   },
   "keywords": [
     "konstructor",
@@ -34,11 +35,16 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "condition-circle": "^1.5.0",
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "semantic-release": "^7.0.2"
   },
   "dependencies": {
     "marko": "^4.4.27"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   }
 }
