@@ -6,5 +6,8 @@
   "<import-javascripts>": {
       "template": "./components/import-javascripts.marko",
       "@js": "*"
+  },
+  "<render>": {
+      "template": "./components/render.marko"
   }
 }
