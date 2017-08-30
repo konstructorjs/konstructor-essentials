@@ -1,0 +1,24 @@
+{
+  "name": "konstructor-essentials",
+  "version": "0.0.0",
+  "description": "essentials for konstructor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konstructorjs/konstructor-essentials.git"
+  },
+  "keywords": [
+    "konstructor",
+    "marko",
+    "node"
+  ],
+  "author": "Manthan Mallikarjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konstructorjs/konstructor-essentials/issues"
+  },
+  "homepage": "https://github.com/konstructorjs/konstructor-essentials#readme"
+}
