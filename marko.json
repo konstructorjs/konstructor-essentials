@@ -1,13 +1,20 @@
 {
   "<import-stylesheets>": {
-      "template": "./components/import-stylesheets.marko",
-      "@css": "*"
+    "template": "./components/import-stylesheets.marko",
+    "@css": "*"
   },
   "<import-javascripts>": {
-      "template": "./components/import-javascripts.marko",
-      "@js": "*"
+    "template": "./components/import-javascripts.marko",
+    "@js": "*"
   },
   "<render>": {
-      "template": "./components/render.marko"
+    "template": "./components/render.marko"
+  },
+  "<active-link>": {
+    "template": "./components/active-link.marko",
+    "@href": "*",
+    "@id": "*",
+    "@class": "*",
+    "@active-class": "*"
   }
 }
