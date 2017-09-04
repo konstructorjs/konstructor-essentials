@@ -13,6 +13,7 @@
   "<active-link>": {
     "template": "./components/active-link.marko",
     "@href": "*",
+    "@match": "*",
     "@id": "*",
     "@class": "*",
     "@active-class": "*"

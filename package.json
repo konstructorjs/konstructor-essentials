@@ -42,7 +42,8 @@
     "semantic-release": "^7.0.2"
   },
   "dependencies": {
-    "marko": "^4.4.27"
+    "marko": "^4.4.27",
+    "minimatch": "^3.0.4"
   },
   "release": {
     "verifyConditions": "condition-circle"

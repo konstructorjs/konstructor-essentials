@@ -1,7 +1,12 @@
 $ {
-  const href = input.href.replace(/\\/g, '');
-  const path = input.route.replace(/\\/g, '');
-  const active = (href === path);
+  const minimatch = require('minimatch');
+
+  let match = '';
+  if (input.match) match = input.match.replace(/\/+$/, '');
+  const href = input.href.replace(/\/+$/, '');
+  const path = input.route.replace(/\/+$/, '');
+
+  const active = (href === path) || minimatch(path, match);
   const activeClass = input.activeClass || 'active';
   let classes = input.class;
   if (active) {
@@ -9,4 +14,4 @@ $ {
   }
 }
 
-<a href=input.href class=classes><include(input.renderBody, input) /></a>
+<a href=input.href class=classes><include(input.renderBody, input) />b</a>
