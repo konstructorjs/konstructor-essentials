@@ -7,7 +7,7 @@
 </p>
 
 # konstructor-essentials - essentials for konstructor
-konstructor add some essential styles and components for [konstructor](https://github.com/konstructorjs/konstructor). generally you would use this package along with konstructor
+konstructor adds some essential styles and components for [konstructor](https://github.com/konstructorjs/konstructor). generally you would use this package along with konstructor
 
 ## Getting Started
 
