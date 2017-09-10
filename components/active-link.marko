@@ -3,10 +3,16 @@ $ {
 
   let match = '';
   if (input.match) match = input.match.replace(/\/+$/, '');
-  const href = input.href.replace(/\/+$/, '');
-  const path = input.route.replace(/\/+$/, '');
+  let href = input.href.replace(/\/+$/, '');
+  let path = input.route.replace(/\/+$/, '');
+  if (href === '') {
+    href = '/';
+  }
+  if (path === '') {
+    path = '/';
+  }
 
-  const active = (href === path) || minimatch(path, match);
+  const active = (href === path) || (match && minimatch(path, match));
   const activeClass = input.activeClass || 'active';
   let classes = input.class;
   if (active) {
