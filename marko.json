@@ -17,5 +17,8 @@
     "@id": "*",
     "@class": "*",
     "@active-class": "*"
+  },
+  "<csrf-tag>": {
+    "template": "./components/csrf-tag.marko"
   }
 }
