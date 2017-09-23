@@ -10,6 +10,9 @@
   "<render>": {
     "template": "./components/render.marko"
   },
+  "<render-mailer>": {
+    "template": "./components/render-mailer.marko"
+  },
   "<active-link>": {
     "template": "./components/active-link.marko",
     "@href": "*",

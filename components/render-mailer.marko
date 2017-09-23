@@ -1,0 +1,9 @@
+static {
+  const includeTarget = require(process.cwd() + '/app/mailer/application/index.marko');
+}
+
+<include(includeTarget, input)>
+  <@main>
+    <include(input.renderBody, input) />
+  </@main>
+</include>
